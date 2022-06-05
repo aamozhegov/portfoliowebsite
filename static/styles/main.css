@@ -1,0 +1,184 @@
+body {
+	background-color: whitesmoke;
+}
+
+.section--1 {
+	background-color: white;
+	padding-top: 2em;
+	padding-bottom: 2em;
+}
+
+
+.section--2 {
+	background-color: whitesmoke;
+	padding-top: 2em;
+	padding-bottom: 2em;
+}
+
+.navigation-bar {
+	background-color: #293B44;
+	height: 60px;
+	display: flex;
+	justify-content: center;
+}
+
+.nav-link {
+	color: whitesmoke;
+
+	margin: auto;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.nav-link:hover {
+	color: #f7bd1b;
+	text-decoration: underline;
+
+	/* color: #f7bd1b; */
+} 
+
+.hero {
+	background-color: #202020;
+	min-height: 70vh;
+	color: whitesmoke;
+}
+
+#profile-pic {
+	height: 240px;
+	width: 259px;
+	object-fit: cover;
+	border-radius: 50%;
+}
+
+.hero--content {
+	margin: 0 auto;
+	padding: 3em;
+}
+
+.hero--content--intro {
+	display: flex;
+	justify-content: center;
+	color: whitesmoke;
+	align-items: center;
+	gap: 3em;
+	margin-bottom: 2em;
+
+}
+
+.intro--name {
+	font-size: 68px;
+	letter-spacing: .1em;
+	font-weight: 800;
+}
+
+
+.description {
+	font-size: 36px;
+	text-align: center;
+}
+
+.slogan {
+	font-size: 20px;
+	text-align: center;
+}
+
+.projects--wrapper {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 2em;
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+
+
+.project--thumbnail {
+	width: 100%;
+}
+
+.project--body {
+	background-color: whitesmoke;
+	padding: 1em;
+}
+
+.skills--container {
+	width: 600px;
+	margin: 0 auto;
+	padding: 1em;
+}
+
+
+.skill-wrapper {
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+
+
+.other--skills--wrapper {
+	display: flex;
+	gap: 1.5em;
+}
+
+.skill--tag {
+	background-color: #293B44;
+	width: fit-content;
+	padding: 6px 10px;
+	border-radius: 40px;
+}
+
+.skill--tag--text {
+	color: whitesmoke;
+}
+
+@media (max-width:1000px){
+	.hero--content--intro{
+		flex-direction: column;
+	}
+	.projects--wrapper{
+		grid-template-columns: 1fr;
+	}
+}
+
+@media (max-width:800px){
+	.hero--content{
+		width: 100%;
+	}
+}
+
+@media (max-width:600px){
+	.skills--container{
+		width: 100%;
+	}
+}
+
+/* Эксперимент */
+
+.dropbtn {
+	color: white;
+	padding: 16px;
+	border: none;
+}
+
+
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f1f1f1;
+	max-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+
+.dropdown-content a {
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+.dropdown-content a:hover {
+	background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
